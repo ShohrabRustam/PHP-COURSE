@@ -17,7 +17,7 @@ class StackArray{
                 self::$elementPresent++;
                 }
                 else{
-                    throw new RunTimeException("Stack Overflow!!!");
+                    throw new RunTimeException("Stack Overflow!!!") ;
                 }
             }
 
