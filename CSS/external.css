@@ -1,0 +1,27 @@
+p{
+    color: coral;
+    background-color: blanchedalmond;
+    font-size: 20px;
+    border: 2px solid gray;
+    width: 500px;
+    min-width: 50px;
+    max-width: 300px;
+    margin-left:300px ;
+    /* padding-left: 100px; */
+    /* text-align: right; */
+    /* text-align-last: right; */
+}
+body{
+    background-color: rgb(252, 237, 209);
+}
+span{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(235, 21, 235);
+    background-color: rgb(186, 209, 240);
+}
+a{
+    font-size: 20px;
+    border: 2px solid gray;
+    width: 500px;
+}

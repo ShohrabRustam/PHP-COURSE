@@ -1,0 +1,15 @@
+body{
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+.form-group{
+    background-color: linear-gradient(to left, orange, red,yellow,green,blue,indigo,violet);
+    width: 500px;
+    font-weight: 900;
+    font-size: xx-large;
+}
+h1{
+    margin-left: 200px;
+}
+form{
+    padding-left: 300px;
+}

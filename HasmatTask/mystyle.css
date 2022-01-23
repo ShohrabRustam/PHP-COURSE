@@ -1,0 +1,14 @@
+body{
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+.form-group{
+    background-color: blanchedalmond;
+    width: 500px;
+}
+h1{
+    margin-left: 200px;
+}
+
+.output{
+    margin-left: 600px;
+}
