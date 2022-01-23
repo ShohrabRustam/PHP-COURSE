@@ -12,6 +12,18 @@ class Node{
 }
 class QueueDoublyList{
 
+    public $head=null;
+    public $tail=null;
+
+    public function isEmpty(){
+        if ($this->count==0){
+            return 1;
+        }
+        return 0;
+    }
+    
+
+
 }
 
 
