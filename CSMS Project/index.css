@@ -1,0 +1,36 @@
+
+  #header{
+    height:70vh;
+    width:calc(100%);
+    position:relative;
+    top:-1em;
+  }
+  #header:before{
+    content:"";
+    position:absolute;
+    height:calc(100%);
+    width:calc(100%);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+  }
+  #header>div{
+    position:absolute;
+    height:calc(100%);
+    width:calc(100%);
+    z-index:2;
+  }
+
+  #top-Nav a.nav-link.active {
+      color: #f8f9fa;
+      font-weight: 900;
+      position: relative;
+  }
+  #top-Nav a.nav-link.active:before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #f8f9fa;
+    width: 33.33%;
+    left: 33.33%;
+    bottom: 0;
+  }
