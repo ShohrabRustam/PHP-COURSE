@@ -129,17 +129,26 @@ class QueueDoublyList
 		$q = new QueueDoublyList();
 		// Add queue element
 		$q->enqueue(1);
+        $q->printQ();
 		$q->enqueue(2);
+        $q->printQ();
 		$q->enqueue(3);
+        $q->printQ();
 		$q->enqueue(4);
+        $q->printQ();
 		$q->enqueue(5);
 		$q->printQ();
 		echo " Size : ".($q->Size());
 		// Remove queue element
-		echo "<br> Dequeue Node : ".($q->dequeue());
-		echo "<br> Dequeue Node : ".($q->dequeue());
-		echo "<br> Dequeue Node : ".($q->dequeue());
+		echo "<br> Dequeue Node : ".($q->dequeue())."<br><hr>";
+        $q->printQ();
+		echo "<br> Dequeue Node : ".($q->dequeue())."<br><hr>";
+        $q->printQ();
+		echo "<br> Dequeue Node : ".($q->dequeue())."<br><hr>";
 		$q->printQ();
 		echo " Size : ".($q->Size());
 	}
+
 }
+QueueDoublyList::main();
+?>
