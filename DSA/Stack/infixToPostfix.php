@@ -79,3 +79,35 @@ class MyStack
 	}
 
 }
+
+//Class for Conversion to check precedence and is it operator or not  
+class Conversion
+{
+	public	function precedence($string)
+	{
+		if ($string == '+' || $string == '-')
+		{
+			return 1;
+		}
+		else if ($string == '*' || $string == '/')
+		{
+			return 2;
+		}
+		else if ($string == '^')
+		{
+			return 3;
+		}
+		return -1;
+	}
+
+    // check is it operator or not if operator give true else false 
+	public	function is_operator($string)
+	{
+		if ($string == '+' || $string == '-' || 
+            $string == '*' || $string == '/' || $string == '^')
+		{
+			return true;
+		}
+		return false;
+	}
+}
