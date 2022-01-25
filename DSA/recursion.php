@@ -157,13 +157,6 @@ for( $i=1;$i<=$n;$i=$i+2){
 //         return 1;
 //     }
 // }
-function printPrime(){
-    for($i=2;$i<=n;$i++){
-        if(prime($i)){
-            echo $i ." ";
-        }
-    }
-}
 
 // <!-- Number Task -->
 function prime($n)
@@ -173,12 +166,19 @@ function prime($n)
         return 0;
     }
     else{
-    for($i=3;$i<=sqrt($n);$i=$i+2){
-        if($n%$i==0){
-            return 0;
-        }
+        for($i=3;$i<=sqrt($n);$i=$i+2){
+            if($n%$i==0){
+                return 0;
+            }
         }
         return 1;
+    }
+}
+function printPrime(){
+    for($i=2;$i<=n;$i++){
+        if(prime($i)){
+            echo $i ." ";
+        }
     }
 }
 function nearFib($n)
