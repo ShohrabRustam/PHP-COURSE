@@ -133,38 +133,41 @@ $key=6;
 linearSearch($arr,count($arr),$key)
 
 ?>
-<!-- Nth odd Number -->
+
+<?php
+// <!-- Nth odd Number -->
 function odd($n){
-for(int $i=1;$i<=$n;$i=$i+2){
+for( $i=1;$i<=$n;$i=$i+2){
     echo $i." ";
 }
 }
-
-<!-- Nth Prime  -->
-function prime($n){
-    $flag =1;
-    if($n<=1){
-        return 0;
-    }
-    else{
-    for($i=3;$i<=sqrt($n);$i=$i+2){
-        if($n%$i==0){
-            return 0;
-        }
-        }
-        return 1;
-    }
-}
+// 
+// <!-- Nth Prime  -->
+// function prime($n){
+//     $flag =1;
+//     if($n<=1){
+//         return 0;
+//     }
+//     else{
+//     for($i=3;$i<=sqrt($n);$i=$i+2){
+//         if($n%$i==0){
+//             return 0;
+//         }
+//         }
+//         return 1;
+//     }
+// }
 function printPrime(){
-    for($i=2;i<=n;$i++){
+    for($i=2;$i<=n;$i++){
         if(prime($i)){
             echo $i ." ";
         }
     }
 }
 
-<!-- Number Task -->
-function prime($n){
+// <!-- Number Task -->
+function prime($n)
+{
     $flag =1;
     if($n<=1){
         return 0;
@@ -187,15 +190,12 @@ function nearFib($n)
 
 		$a = $b;
 
-		$b = c;
+		$b = $c;
 
 		$c = $a + $b;
 	}
 
-	 $ans = if(abs($c - $n)
-			>= abs($b - $n))
-				? $b
-				: $c;
+	 $ans = abs($c - $n)>= abs($b - $n)? $b: $c;
 
 	echo $ans;
 }
@@ -215,19 +215,20 @@ function numberTask(){
 
 }
 
-function binary($arr,$f,$l,$key){
+function binary($arr,$f,$l,$key)
+{
     if ($f >= $l) {
-        int $mid = ($f - $l) / 2;
+         $mid = ($f - $l) / 2;
 
         if ($arr[$mid] == $key)
-            return $1;
+            return $mid;
 
         if ($arr[$mid] > $key)
             return binary($arr, $f, $mid - 1, $key);
 
-        return binary($arr, $mid + $1, $l, $key);
+        return binary($arr, $mid + $f, $l, $key);
     }
     return 0;
 }
 
-}
+?>
