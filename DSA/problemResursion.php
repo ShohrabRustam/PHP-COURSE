@@ -1,5 +1,20 @@
 <h2>if the number is ever print the number if number is prime print the number othewise print the nearest fibonacci series number </h2>
 <?php
+function prime($n)
+{
+    $flag =1;
+    if($n<=1){
+        return 0;
+    }
+    else{
+        for($i=3;$i<=sqrt($n);$i=$i+2){
+            if($n%$i==0){
+                return 0;
+            }
+        }
+        return 1;
+    }
+}
 
 function printPrime(){
     for($i=2;$i<=n;$i++){
