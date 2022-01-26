@@ -1,6 +1,7 @@
 <?php
 $a=25;
-$salary = function($a){
+$salary = function($a)
+{
     echo "The salary is : " . $a*20;
 }
 $var = function($a) use ($salary){
